@@ -5,7 +5,7 @@ function Cinema() {
     const [cinema, setCinema] = useState([]);
     useEffect(() => {
         axios
-          .get("http://react-movie-api2021.herokuapp.com/api/cinema")
+          .get("https://react-movie-api2021.herokuapp.com/api/cinema")
           .then((response) => setCinema(response.data));
       }, []);
 
