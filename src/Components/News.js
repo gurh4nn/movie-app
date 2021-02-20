@@ -8,7 +8,7 @@ function News() {
   const [news, setNews] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:4000/api/news")
+      .get("http://localhost:4000/api/newshttp://react-movie-api2021.herokuapp.com/api/news")
       .then((response) => setNews(response.data));
   }, []);
 

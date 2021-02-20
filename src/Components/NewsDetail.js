@@ -9,7 +9,7 @@ function NewsDetail() {
   useEffect(() => {
     axios
       .get(
-        `http://localhost:4000/api/news/${id}`
+        `http://react-movie-api2021.herokuapp.com/api/news/${id}`
       )
       .then((response) => setNewsDetail(response.data));
   }, []);
